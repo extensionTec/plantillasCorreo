@@ -1,0 +1,506 @@
+<style type="text/css">/* Reset styles */
+  html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
+#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
+.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} /* Force Hotmail to display emails at full width */
+.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} /* Force Hotmail to display normal line spacing */
+body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;}  Prevent WebKit and Windows mobile changing default text sizes 
+table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} /* Remove spacing between tables in Outlook 2007 and up */
+img{-ms-interpolation-mode:bicubic;} /* Allow smoother rendering of resized image in Internet Explorer */
+
+/* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
+body{margin:0; padding:0;}
+img,a{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
+table{border-collapse:collapse !important;}
+body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+  /*Real styles*/
+    td.h{font-family:Arial,Helvetica,sans-serif}
+    td.p{font-family:"Lucida Sans Unicode","Lucida Grande",sans-serif}
+    .t30{font-size:30px}
+    .t28{font-size:28px}
+    .t20{font-size:20px}
+    .t12{font-size:12px}
+    .t10{font-size:10px}
+    .t8{font-size:8px}
+    .bold{font-weight:bold}
+    .tcenter{text-align:center}
+    .tright{text-align:right}
+    .tleft{text-align:left}
+    .tjustify{text-align:justify}
+    .tgrisFuerte{color:#a2a2a2}
+    .tgrisCCC{color:#ccc}
+    .tblanco{color:#fff}
+    .bg-grisFuerte{background-color:#333}
+    .bg-azulTec{background-color:#121433}
+    .bg-azulEventos{background-color:#445878}
+    .cien{width:100%}
+    .cienImportante{width:100% !important}
+    .img-redes{width:30px;padding-top:20px}
+    .pd015015{padding:0 15px 0 15px}
+    .pd200300{padding:20px 0 30px 0}
+    .pd30{padding-top:30px}
+    .pd20{padding-top:20px}
+    .pd15{padding-top:15px}
+    .pd10{padding-top:10px}
+    .pd5{padding-top:5px}
+    .pd00020{padding-bottom:20px}
+    .pd00030{padding-bottom:30px}
+    .pd01000{padding-right:10px}
+    .pd00010{padding-left:10px}
+    a{color:none}
+</style>
+<!-- ENCABEZADO-->
+<table class="cien" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; margin: 0; padding: 0; border: 0;">
+	<tbody>
+		<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+			<td bgcolor="#121433" class="bg-azulTec" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #121433; margin: 0; padding: 0; border: 0;">
+			<div align="center" class="pd015015" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0 15px; border: 0;">
+			<table style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; border: 0;" width="500">
+				<tbody>
+					<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+						<td class="pd200300" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 20px 0 30px; border: 0;"><!--CONTENIDO AHORA SÍ-->
+						<table class="cien" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; margin: 0; padding: 0; border: 0;">
+							<tbody>
+								<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;"><!-- LOGOTIPO TEC-->
+									<td align="left" bgcolor="#121433" class="bg-azulTec" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #121433; margin: 0; padding: 0; border: 0;" width="250"><img src="https://raw2.github.com/extensionTec/plantillasCorreo/master/img/TEC%20Azul.jpg" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: 100%; -ms-interpolation-mode: bicubic; height: auto; outline: none; text-decoration: none; margin: 0; padding: 0; border: 0;" /></td>
+									<td style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0; border: 0;" width="50">&nbsp;</td>
+									<td align="right" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0; border: 0;" width="200">
+									<table style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; border: 0;"><!-- OPCIONES-->
+										<tbody>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="right" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0 0 20px; border: 0;">
+												<table style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; border: 0;">
+													<tbody>
+														<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+															<td align="right" class="p tgrisFuerte t10" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #a2a2a2; font-style: normal; font-variant: normal; font-weight: normal; font-size: 10px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0; border: 0;"><a class="tblanco" href="http://correo.did.mx/phplistImages/files/Contacto%20Tec%20de%20Monterrey.vcf" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: auto; outline: none; text-decoration: none; color: #fff; margin: 0; padding: 0; border: 0;">Agr&eacute;ganos como contacto</a></td>
+															<td align="right" class="p tgrisFuerte t10" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #a2a2a2; font-style: normal; font-variant: normal; font-weight: normal; font-size: 10px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0; border: 0;"><a class="tblanco" href="[FORWARDURL]" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: auto; outline: none; text-decoration: none; color: #fff; margin: 0; padding: 0; border: 0;">Reenviar</a></td>
+														</tr>
+														<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+															<td align="left" class="p tgrisFuerte t10" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #a2a2a2; font-style: normal; font-variant: normal; font-weight: normal; font-size: 10px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0; border: 0;"><a class="tblanco" href="[FORWARDURL]" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: auto; outline: none; text-decoration: none; color: #fff; margin: 0; padding: 0; border: 0;">Cambiar preferencias</a></td>
+															<td align="right" class="p tgrisFuerte t10" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #a2a2a2; font-style: normal; font-variant: normal; font-weight: normal; font-size: 10px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0; border: 0;"><a class="tblanco" href="[UNSUBSCRIBEURL]" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: auto; outline: none; text-decoration: none; color: #fff; margin: 0; padding: 0; border: 0;">Date de baja</a></td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+											<!-- REDES SOCIALES-->
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="right" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0; border: 0;">
+												<table style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; border: 0;">
+													<tbody>
+														<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+															<td align="right" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0 10px 0 0; border: 0;"><a href="http://facebook.com/extensiontec"><img src="https://raw2.github.com/extensionTec/plantillasCorreo/master/img/facebook.jpg" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: 100%; -ms-interpolation-mode: bicubic; height: auto; outline: none; text-decoration: none; margin: 0; padding: 0; border: 0;" /></a></td>
+															<td align="right" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0 10px 0 0; border: 0;"><a href="https://twitter.com/TEC_EdEjecutiva"><img src="https://raw2.github.com/extensionTec/plantillasCorreo/master/img/twitter.jpg" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: 100%; -ms-interpolation-mode: bicubic; height: auto; outline: none; text-decoration: none; margin: 0; padding: 0; border: 0;" /></a></td>
+															<td align="right" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0 10px 0 0; border: 0;"><a href="http://www.youtube.com/user/ExtensionCampusAgs"><img src="https://raw2.github.com/extensionTec/plantillasCorreo/master/img/youtube.jpg" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: 100%; -ms-interpolation-mode: bicubic; height: auto; outline: none; text-decoration: none; margin: 0; padding: 0; border: 0;" /></a></td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!-- PORTADA-->
+
+<table class="cien" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; margin: 0; padding: 0; border: 0;">
+	<tbody>
+		<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+			<td align="center" bgcolor="#333" class="bg-grisFuerte" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #333; margin: 0; padding: 0; border: 0;">
+			<table style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; border: 0;" width="500">
+				<tbody>
+					<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+						<td class="cien" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; margin: 0; padding: 0; border: 0;">
+						<table class="cien" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; margin: 0; padding: 0; border: 0;">
+							<tbody>
+								<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+									<td align="center" class="h t30 bold tcenter tgrisFuerte pd20" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center; color: #a2a2a2; font-style: normal; font-variant: normal; font-weight: bold; font-size: 30px; line-height: normal; font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 20px 0 0; border: 0;">TECNOL&Oacute;GICO DE MONTERREY<br />
+									CAMPUS AGUASCALIENTES</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- IMAGEN PRINCIPAL-->
+
+						<table class="cien" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; margin: 0; padding: 0; border: 0;">
+							<tbody>
+								<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+									<td class="pd15" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 15px 0 0; border: 0;"><img src="http://i.imgur.com/RaviWFX.jpg" style="font-style: normal; font-variant: normal; font-weight: normal; line-height: 100%; height: 148px; outline: none; text-decoration: none; margin: 0px; padding: 0px; border: 0px; width: 550px;" /></td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- DESCRIPCIÓN PRINCIPAL-->
+
+						<table class="cien" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; margin: 0; padding: 0; border: 0;">
+							<tbody>
+								<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+									<td align="center" class="h t30 bold tcenter tblanco pd10" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center; color: #fff; font-style: normal; font-variant: normal; font-weight: bold; font-size: 30px; line-height: normal; font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 10px 0 0; border: 0;">Lorem Ipsum</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- DESCRIPCIÓN AUXILIAR-->
+
+						<table class="cien" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; margin: 0; padding: 0; border: 0;">
+							<tbody>
+								<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+									<td align="center" class="p tcenter tgrisCCC t20 pd00030" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center; color: #ccc; font-style: normal; font-variant: normal; font-weight: normal; font-size: 20px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0 0 30px; border: 0;">Dolor sit amet, consectetur adipiscing elit</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!-- 2 columnas con imagen-->
+
+<table class="cien" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; margin: 0; padding: 0; border: 0;">
+	<tbody>
+		<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+			<td align="center" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0; border: 0;background-color:#707278;padding-bottom:10px;">
+			<table style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; border: 0;" width="500">
+				<tbody>
+					<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+						<td class="cien pd20" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; margin: 0; padding: 20px 0 0; border: 0;"><!-- IZQUIERDA-->
+						<table class="cien" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; margin: 0; padding: 0; border: 0;">
+							<tbody>
+								<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+									<td align="center" class="h t20	 bold tcenter pd10" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center; font-style: normal; font-variant: normal; font-weight: bold; font-size: 20px; line-height: normal; font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 10px 0 0; border: 0;padding-bottom:10px;color:white;">Curso de Programaci&oacute;n de Controladores Programables</td>
+								</tr>
+								<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+									<td style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0; border: 0;"><!-- DETALLES-->
+									<table align="left" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; border: 0;" width="240">
+										<tbody>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td class="pd20" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0px 10px 10px 0px; border: 0;"><img src="http://dummyimage.com/230x200/000000/ffffff.jpg&amp;text=Imagen+de+apoyo" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: 100%; -ms-interpolation-mode: bicubic; height: auto; outline: none; text-decoration: none; margin: 0;border: 0;" /></td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010 bold" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 10px 0px 0; border: 0;color: #CCCCCC;">Fechas</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 10px 10px 0; border: 0;color: #CCCCCC;">11 de abril</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010 pd10 bold" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 10px 0 0px; border: 0;color: #CCCCCC;">Horario</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 10px 0px 0; border: 0;color: #CCCCCC;">Viernes de 16:00 a 20:00 horas<br />
+												S&aacute;bados de 08:00 a 13:00 horas</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010 pd10 bold" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 10px 10px 0 0px; border: 0;color: #CCCCCC;">Lugar</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 10px 0px 0; border: 0;color: #CCCCCC;">Tecnol&oacute;gico de Monterrey, Campus Aguascalientes</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010 pd10 bold" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 10px 10px 0 0px; border: 0;color: #CCCCCC;">Contacto</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 10px 10px 0; border: 0;color: #CCCCCC;">Christopher Edgar Falc&oacute;n Anaya<br />
+												L&iacute;der de Laboratorios CeDIAM<br />
+												(+52) 449 9100 900 Ext. 5773<br />
+												<a href="mailto:christopher.falcon@itesm.mx" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: auto; outline: none; text-decoration: none; color: none; margin: 0; padding: 0; border: 0;color: #CCCCCC;">christopher.falcon@itesm.mx</a></td>
+											</tr>
+										</tbody>
+										<!-- DESCRIPCIÓN-->
+									</table>
+
+									<table align="right" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; border: 0;" width="240">
+										<tbody>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="right" class="p t12 tright" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: left; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 0px 10px 10px; border: 0;color: #CCCCCC;">Dirigido a personas en &aacute;reas relacionadas a programaci&oacute;n de PLC<br />
+												<br />
+												<span style="font-weight:bold;">Objetivo del curso</span><br />
+												En este curso se revisaran las tecnolog&iacute;as de automatizaci&oacute;n de la familia Logix de Rockwell Automation. Al finalizar el curso, los participantes comprender&aacute;n conceptos b&aacute;sicos y avanzados de los controladores programables y sus aplicaciones de control l&oacute;gico secuencial. Los alumnos realizar&aacute;n pr&aacute;cticas y ser&aacute;n capaces de desarrollar una soluci&oacute;n de control de un proceso discreto usando la plataforma de desarrollo Logix5000 y aplicando t&eacute;cnicas de programaci&oacute;n estructurada para el desarrollo de la l&oacute;gica de control.<br />
+												<br />
+												<span style="font-weight:bold;">Temario del curso</span><br />
+												* Sesi&oacute;n 1: Introducci&oacute;n a la Automatizaci&oacute;n Industrial (2 horas)<br />
+												* Sesi&oacute;n 2: Control L&oacute;gico Secuencial (3 horas)<br />
+												* Sesi&oacute;n 3: Controladores L&oacute;gicos Programables (5 horas)<br />
+												* Sesi&oacute;n 4: Controladores Programables de Automatizaci&oacute;n (5 horas)<br />
+												* Sesi&oacute;n 5: T&eacute;cnicas avanzadas de programaci&oacute;n de controladores programables (5 horas)<br />
+												* Sesi&oacute;n 6: T&eacute;cnicas avanzadas de programaci&oacute;n (continuaci&oacute;n, 5 horas)</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!-- 2 columnas con imagen-->
+
+<table class="cien" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; margin: 0; padding: 0; border: 0;">
+	<tbody>
+		<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+			<td align="center" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0; border: 0;background-color:#333333;padding-bottom:10px;">
+			<table style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; border: 0;" width="500">
+				<tbody>
+					<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+						<td class="cien pd20" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; margin: 0; padding: 20px 0 0; border: 0;"><!-- IZQUIERDA-->
+						<table class="cien" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; margin: 0; padding: 0; border: 0;">
+							<tbody>
+								<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+									<td align="center" class="h t20	 bold tcenter pd10" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center; font-style: normal; font-variant: normal; font-weight: bold; font-size: 20px; line-height: normal; font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 10px 0 0; border: 0;padding-bottom:10px;color:white;">Certificaci&oacute;n Internacional SolidWorks CSWA</td>
+								</tr>
+								<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+									<td style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0; border: 0;"><!-- DETALLES-->
+									<table align="left" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; border: 0;" width="240">
+										<tbody>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td class="pd20" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0px 10px 10px 0px; border: 0;"><img src="http://dummyimage.com/230x200/000000/ffffff.jpg&amp;text=Imagen+de+apoyo" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: 100%; -ms-interpolation-mode: bicubic; height: auto; outline: none; text-decoration: none; margin: 0;border: 0;" /></td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010 bold" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 10px 0px 0; border: 0;color: #CCCCCC;">Fechas</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 10px 10px 0; border: 0;color: #CCCCCC;">11 de abril</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010 pd10 bold" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 10px 0 0px; border: 0;color: #CCCCCC;">Horario</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 10px 0px 0; border: 0;color: #CCCCCC;">Viernes de 16:00 a 20:00 horas<br />
+												S&aacute;bados de 08:00 a 13:00 horas</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010 pd10 bold" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 10px 10px 0 0px; border: 0;color: #CCCCCC;">Lugar</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 10px 0px 0; border: 0;color: #CCCCCC;">Tecnol&oacute;gico de Monterrey, Campus Aguascalientes</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010 pd10 bold" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 10px 10px 0 0px; border: 0;color: #CCCCCC;">Contacto</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 10px 10px 0; border: 0;color: #CCCCCC;">Christopher Edgar Falc&oacute;n Anaya<br />
+												L&iacute;der de Laboratorios CeDIAM<br />
+												(+52) 449 9100 900 Ext. 5773<br />
+												<a href="mailto:christopher.falcon@itesm.mx" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: auto; outline: none; text-decoration: none; color: none; margin: 0; padding: 0; border: 0;color: #CCCCCC;">christopher.falcon@itesm.mx</a></td>
+											</tr>
+										</tbody>
+										<!-- DESCRIPCIÓN-->
+									</table>
+
+									<table align="right" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; border: 0;" width="240">
+										<tbody>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="right" class="p t12 tright" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: left; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 0px 10px 10px; border: 0;color: #CCCCCC;"><span style="font-weight:bold;">Acerca de la certificaci&oacute;n</span><br />
+												SolidWorks es el software de dise&ntilde;o 3D ḿ&aacute;s utilizado. El objetivo de la certificaci&oacute;n es que los participantes hagan de SolidWorks una herramienta de uso com&uacute;n para sus actividades de dise&ntilde;o.<br />
+												<br />
+												<span style="font-weight:bold;">M&oacute;dulos</span><br />
+												* Sketching y modelado de partes b&aacute;sicas<br />
+												* Caracter&iacute;sticas avanzadas y tablas de configuraciones<br />
+												* Ensambles y dibujos<br />
+												* Tutorial y examen de prueba<br />
+												* Examen de certificaci&oacute;n<br />
+												<br />
+												<span style="font-weight:bold;">Instructores destacados</span><br />
+												* Ingeniero Mecatr&oacute;nico Efra&iacute;n Garc&iacute;a Pilotzi<br />
+												* Ingeniero Mec&aacute;nico Christopher Falcon Anaya</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!-- 2 columnas con imagen-->
+
+<table class="cien" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; margin: 0; padding: 0; border: 0;">
+	<tbody>
+		<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+			<td align="center" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0; border: 0;background-color:#707278;padding-bottom:10px;">
+			<table style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; border: 0;" width="500">
+				<tbody>
+					<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+						<td class="cien pd20" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%; margin: 0; padding: 20px 0 0; border: 0;"><!-- IZQUIERDA-->
+						<table class="cien" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; margin: 0; padding: 0; border: 0;">
+							<tbody>
+								<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+									<td align="center" class="h t20	 bold tcenter pd10" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center; font-style: normal; font-variant: normal; font-weight: bold; font-size: 20px; line-height: normal; font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 10px 0 0; border: 0;padding-bottom:10px;color:white;">Taller: Ingener&iacute;a de Engranajes Cil&iacute;ndricos</td>
+								</tr>
+								<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+									<td style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0; border: 0;"><!-- DETALLES-->
+									<table align="left" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; border: 0;" width="240">
+										<tbody>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td class="pd20" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0px 10px 10px 0px; border: 0;"><img src="http://dummyimage.com/230x200/000000/ffffff.jpg&amp;text=Imagen+de+apoyo" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: 100%; -ms-interpolation-mode: bicubic; height: auto; outline: none; text-decoration: none; margin: 0;border: 0;" /></td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010 bold" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 10px 0px 0; border: 0;color: #CCCCCC;">Fechas</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 10px 10px 0; border: 0;color: #CCCCCC;">22 de marzo</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010 pd10 bold" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 10px 0 0px; border: 0;color: #CCCCCC;">Horario</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 10px 0px 0; border: 0;color: #CCCCCC;">S&aacute;bados de 08:00 a 14:00 horas</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010 pd10 bold" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 10px 10px 0 0px; border: 0;color: #CCCCCC;">Lugar</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 10px 0px 0; border: 0;color: #CCCCCC;">Tecnol&oacute;gico de Monterrey, Campus Aguascalientes</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010 pd10 bold" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: bold; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 10px 10px 0 0px; border: 0;color: #CCCCCC;">Contacto</td>
+											</tr>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="left" class="p t12 tleft pd00010" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: right; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 10px 10px 0; border: 0;color: #CCCCCC;">Christopher Edgar Falc&oacute;n Anaya<br />
+												L&iacute;der de Laboratorios CeDIAM<br />
+												(+52) 449 9100 900 Ext. 5773<br />
+												<a href="mailto:christopher.falcon@itesm.mx" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: auto; outline: none; text-decoration: none; color: none; margin: 0; padding: 0; border: 0;color: #CCCCCC;">christopher.falcon@itesm.mx</a></td>
+											</tr>
+										</tbody>
+										<!-- DESCRIPCIÓN-->
+									</table>
+
+									<table align="right" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; border: 0;" width="240">
+										<tbody>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="right" class="p t12 tright" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: left; font-style: normal; font-variant: normal; font-weight: normal; font-size: 12px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0px 0px 10px 10px; border: 0;color: #CCCCCC;"><span style="font-weight:bold;">Objetivo del taller</span><br />
+												* Conocer aspectos relevantes sobre el mercado mundial de los engranajes.<br />
+												* Caracterizar los tipos b&aacute;sicos de engranajes y particularmente en los engranajes cil&iacute;ndricos de ejes paralelos.<br />
+												* Conocer sobre las principales normas internacionales referidas al c&aacute;lculo de la capacidad de carga y la geometr&iacute;a de los engranajes cil&iacute;ndricos.<br />
+												<br />
+												<span style="font-weight:bold;">Dirigido a</span><br />
+												El curso est&aacute; dirigido a profesionales y personas en general con inter&eacute;s de actualizaci&oacute;n en los procedimientos internacionales de c&aacute;lculo de los engranajes cil&iacute;ndricos. El curso es de utilidad para ingenieros y dise&ntilde;adores mec&aacute;nicos, tecn&oacute;logos vinculados al c&aacute;lculo, dise&ntilde;o y fabricaci&oacute;n de engranajes y profesores de dise&ntilde;o de m&aacute;quinas.</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!-- pie-->
+
+<table class="cien" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; margin: 0; padding: 0; border: 0;">
+	<tbody>
+		<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+			<td bgcolor="#121433" class="bg-azulTec" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #121433; margin: 0; padding: 0; border: 0;">
+			<div align="center" class="pd015015" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0 15px; border: 0;">
+			<table style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; border: 0;" width="500">
+				<tbody>
+					<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+						<td class="pd200300" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 20px 0 30px; border: 0;"><!--CONTENIDO AHORA SÍ-->
+						<table class="cien" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; width: 100%; margin: 0; padding: 0; border: 0;">
+							<tbody>
+								<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;"><!-- LOGOTIPO TEC-->
+									<td align="right" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0; border: 0;" width="220">
+									<table style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; border: 0;"><!-- OPCIONES-->
+										<tbody>
+											<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+												<td align="right" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0; border: 0;">
+												<table style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; border-collapse: collapse !important; border-spacing: 0; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; margin: 0; padding: 0; border: 0;">
+													<tbody>
+														<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+															<td align="center" class="p tgrisFuerte t8 tcenter" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center; color: #a2a2a2; font-style: normal; font-variant: normal; font-weight: normal; font-size: 8px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0; border: 0;"><span style="font-size:9px;"><a class="tblanco" href="http://www.itesm.edu/wps/wcm/connect/ITESM/Tecnologico+de+Monterrey/Herramientas/Aviso+de+privacidad/" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: auto; outline: none; text-decoration: none; color: #fff; margin: 0; padding: 0; border: 0;">Haz click para ver el Aviso de privacidad</a></span></td>
+														</tr>
+														<tr style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; margin: 0; padding: 0; border: 0;">
+															<td align="right" class="p tgrisFuerte t8 tjustify" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: justify; color: #a2a2a2; font-style: normal; font-variant: normal; font-weight: normal; font-size: 8px; line-height: normal; font-family: 'Lucida Sans Unicode','Lucida Grande', sans-serif; margin: 0; padding: 0; border: 0;"><span style="font-size:9px;">El Bolet&iacute;n Electr&oacute;nico es una publicidad informativa mensual producida por Campus de Educaci&oacute;n Ejecutiva.<br />
+															Tecnol&oacute;gico de Monterrey - Campus Aguascalientes<br />
+															<br />
+															Avenida Eugenio Garza &nbsp;#1500. Aguascalientes, Ags. M&eacute;xico.<br />
+															+52 (449) 9100.900 Ext. 5713<br />
+															<a href="mailto:extension.ags@servicios.itesm.mx">extension.ags@servicios.itesm.mx</a></span></td>
+														</tr>
+													</tbody>
+												</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									</td>
+									<td style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; margin: 0; padding: 0; border: 0;" width="30">&nbsp;</td>
+									<td align="right" bgcolor="#121433" class="bg-azulTec" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: normal; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #121433; margin: 0; padding: 0; border: 0;" width="250"><img src="https://raw2.github.com/extensionTec/plantillasCorreo/master/img/TEC%20Azul.jpg" style="font-size: normal; font-style: normal; font-variant: normal; font-weight: normal; line-height: 100%; -ms-interpolation-mode: bicubic; height: auto; outline: none; text-decoration: none; margin: 0; padding: 0; border: 0;" /></td>
+								</tr>
+							</tbody>
+						</table>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			</div>
+			</td>
+		</tr>
+	</tbody>
+</table>
